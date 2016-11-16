@@ -1,0 +1,21 @@
+group 'me.weizheng'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+mainClassName = 'me.weizheng.finance.data.MainRunner'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.jsoup', name:'jsoup', version: '1.10.1'
+    compile group: 'joda-time', name: 'joda-time', version: '2.9.6'
+    compile group: 'org.joda', name: 'joda-money', version: '0.12'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
